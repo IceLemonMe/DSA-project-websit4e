@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <link rel="stylesheet" type="text/css" href="..\CSS\CSS\Style.css">
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .cart {
+        margin-top: 20px;
+        margin-left: 12px;
+    }
+
+    .cart-items {
+        margin-top: 10px;
+    }
+
+    .cart-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .cart-item img {
+        max-width: 50px;
+        margin-right: 10px;
+    }
+
+    .cart-item button {
+        margin-left: 10px;
+    }
+
+    .cart-controls {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .total {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    button {
+        border-radius: 12px;
+    }
+</style>
+</head>
+
+<body style="background-color: rgb(255, 255, 255); font-family: consolas;">
+    <div style="background-color: rgb(36, 36, 36); color: aliceblue;">
+        <div id="container"></div>
+            <div id="header">
+                <div id="logo">
+                    <h1><a href="HomePage.html" style="color: aliceblue;">SteelEDC</a></h1>
+                </div>
+                <div id="navigation">
+                    <ul>
+                        <li><a href="HomePage.html">Home</a></li>
+                        <li><a href="Cart.html">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="cart">
+        <h2>Cart items</h2>
+        <div class="cart-item" id="cart-items">
+        </div>
+        <div>
+            <p id="cookie_item"></p>
+            <li>
+                <p id="output"></p>
+                <button onclick="eraseCookie()">Clear cart</button>
+                <div id="total-price" class="total"></div>
+                <button
+                    onclick="eraseCookie(); alert('You order has been recieved! It will arrive in 3 weeks.')">Checkout</button>
+            </li>
+        </div>
+    </div>
+    <script src="../Cookies.js"></script>
+    <script>
+        window.onload = function () {
+            console.log(document.cookie)
+            console.log(document.cookie.split(";"))
+            const cookiesArray = document.cookie.split(";").map(cookie => cookie.trim());
+            document.getElementById('cookie_item').innerHTML = cookiesArray.join('<br>') + '<br>';
+
+            totalCost();
+        };
+        document.getElementById("output").innerText = "Total Cost: $" + totalCookieValue;
+    </script>
+</body>
+
+</html>

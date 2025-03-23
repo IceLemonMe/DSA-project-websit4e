@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SteelEDC</title>
+    <link rel="stylesheet" type="text/css" href="..\CSS\CSS\Style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #242424;
+            color: white;
+            padding: 15px 20px;
+            height: 50px;
+            margin-bottom: 0px;
+        }
+
+        #header #logo h1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #navigation ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        #navigation ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .hero-section {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1rem;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .product h2 a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        .product-info {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+
+        .product-info li {
+            margin-bottom: 5px;
+        }
+
+        #footer {
+            background-color: #242424;
+            color: white;
+            text-align: center;
+            display: grid;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body style="font-family: consolas;">
+    <div id="container">
+        <div id="header">
+            <div id="logo">
+                <h1><a href="HomePage.html">SteelEDC</a></h1>
+            </div>
+            <div id="navigation">
+                <ul>
+                    <li><a href="HomePage.html">Home</a></li>
+                    <li><a href="SearchBar.html">Search</a></li>
+                    <li><a href="Cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mycontainer">
+            <div class="background-div">
+                <h3 class="Welcome">
+                    Welcome to SteelEDC where we find you the best fidget toys! <br><br> -P.S. Buy MORE save
+                    MORE!!!
+                </h3>
+            </div>
+
+
+            <div id="content">
+                <div class="product">
+                    <img src="/images/zoom.jpg" width="300" height="auto" alt="">
+                    <h2><a href="Products/ZOOM.html">ACEdc x goBigger ZOOM Fidget</a></h2>
+                    <ul class="product-info">
+                        <li>$362</li>
+                        <li class="available">Available</li>
+                    </ul>
+                </div>
+                <div class="product">
+                    <img src="https://meta-edc.com/cdn/shop/files/yc-edc-breakthrough-slider-219009_900x900.jpg?v=1724472387"
+                        width="300" height="auto" alt="">
+                    <h2><a href="Products/Breakthrough.html">YC EDC Breakthrough Slider</a></h2>
+                    <ul class="product-info">
+                        <li>$211</li>
+                        <li class="not-available">Available</li>
+                    </ul>
+                </div>
+                <div class="product">
+                    <img src="https://meta-edc.com/cdn/shop/products/lautie-shuffle-v3-30-poker-fidget-slider-347706_900x900.jpg?v=1696951988"
+                        width="300" height="auto" alt="">
+                    <h2><a href="Products/SHUFFLE.html">Lautie SHUFFLE V3 Poker Fidget Slider</a></h2>
+                    <ul class="product-info">
+                        <li>$382</li>
+                        <li class="available">Available</li>
+                    </ul>
+                </div>
+                <div class="product">
+                    <img src="https://meta-edc.com/cdn/shop/products/mot-edc-rhythm-fidget-slider-836628_900x900.jpg?v=1705075762"
+                        width="300" height="auto" alt="">
+                    <h2><a href="Products/RhythmSlider.html">MOT Rhythm Fidget Slider</a></h2>
+                    <ul class="product-info">
+                        <li>$251</li>
+                        <li class="not-available">Not Available</li>
+                    </ul>
+                </div>
+                <div class="product">
+                    <img src="https://meta-edc.com/cdn/shop/products/mot-edc-groove-fidget-slider-458254_900x900.jpg?v=1721059122"
+                        width="300" height="auto" alt="">
+                    <h2><a href="Products/Groove.html">Groove Fidget Slider</a></h2>
+                    <ul class="product-info">
+                        <li>$422</li>
+                        <li class="available">Available</li>
+                    </ul>
+                </div>
+                <div class="product">
+                    <img src="https://meta-edc.com/cdn/shop/products/mot-edc-sky-breaker-fidget-slider-195094_900x900.jpg?v=1706733065"
+                        width="300" height="auto" alt="">
+                    <h2><a href="Products/MOT.html">MOT Sky Breaker Fidget Slider</a></h2>
+                    <ul class="product-info">
+                        <li>$409</li>
+                        <li class="available">Available</li>
+                    </ul>
+                </div>
+
+                <div class="product">
+                    <img src="/images/breakthrough image.jpg" width="300" height="auto" alt="">
+                    <h2><a href="Products/acedc contra gammer fidget slire clicker.jpg">ACEdc GAMER Fidget Slider
+                            Clicker</a>
+                    </h2>
+                    <ul class="product-info">
+                        <li>$147</li>
+                        <li class="not-available"> Not Available</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div id="footer">© 2025 SteelEDC. All rights reserved.</div>
+        </div>
+</body>
+
+</html>
